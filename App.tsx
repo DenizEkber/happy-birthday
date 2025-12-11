@@ -1,10 +1,11 @@
 import React from 'react';
-import FloatingParticles from './components/FloatingParticles';
-import ClickSparkles from './components/ClickSparkles';
-import HeroSection from './components/HeroSection';
-import MessageSection from './components/MessageSection';
-import TributeSection from './components/TributeSection';
-import FinaleSection from './components/FinaleSection';
+import FloatingParticles from './components/FloatingParticles.tsx';
+import ClickSparkles from './components/ClickSparkles.tsx';
+import HeroSection from './components/HeroSection.tsx';
+import MessageSection from './components/MessageSection.tsx';
+import TributeSection from './components/TributeSection.tsx';
+import FinaleSection from './components/FinaleSection.tsx';
+import AudioControl from './components/AudioControl.tsx';
 
 const App: React.FC = () => {
   const scrollToMessage = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
   return (
     <main className="relative w-full min-h-screen overflow-hidden selection:bg-pink-200 selection:text-pink-900">
       {/* Global Effects */}
+      <AudioControl />
       <FloatingParticles />
       <ClickSparkles />
 

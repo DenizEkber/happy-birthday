@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { STUDENT_MESSAGES } from '../constants';
+import { STUDENT_MESSAGES } from '../constants.tsx';
 import { Heart, Star, BookOpen, Lightbulb } from 'lucide-react';
 
 const iconMap: Record<string, React.ReactNode> = {

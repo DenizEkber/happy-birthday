@@ -1,6 +1,7 @@
-import { StudentMessage } from './types';
+import { StudentMessage } from './types.ts';
 
-export const AUDIO_URL = "https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-simple-version-668.mp3";
+// Add the missing AUDIO_URL export
+export const AUDIO_URL = 'https://assets.mixkit.co/music/preview/mixkit-happy-birthday-music-box-2993.mp3';
 
 export const STUDENT_MESSAGES: StudentMessage[] = [
   {

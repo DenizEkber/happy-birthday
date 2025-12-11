@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Happy Birthday Teacher!</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Babel for browser-side JSX compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -58,15 +60,19 @@
   "imports": {
     "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
     "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "react/": "https://esm.sh/react@^19.2.1/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.1/client",
+    "react-dom": "https://esm.sh/react-dom@^19.2.1",
     "react": "https://esm.sh/react@^19.2.1",
-    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.4"
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.4",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
+    <!-- Load the main entry point as a Babel script -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

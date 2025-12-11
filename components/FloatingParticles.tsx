@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Particle } from '../types';
+import { Particle } from '../types.ts';
 
 const FloatingParticles: React.FC = () => {
   const [particles, setParticles] = useState<Particle[]>([]);
