@@ -1,5 +1,6 @@
 import { StudentMessage } from './types';
-import { BookOpen, Star, Heart, Lightbulb } from 'lucide-react';
+
+export const AUDIO_URL = "https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-simple-version-668.mp3";
 
 export const STUDENT_MESSAGES: StudentMessage[] = [
   {
@@ -31,6 +32,3 @@ export const STUDENT_MESSAGES: StudentMessage[] = [
     icon: "Lightbulb"
   }
 ];
-
-// Happy Birthday audio (Reliable MP3 source)
-export const AUDIO_URL = "https://media.geeksforgeeks.org/wp-content/uploads/20230524143204/happy-birthday-music.mp3";

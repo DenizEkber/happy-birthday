@@ -1,7 +1,6 @@
 import React from 'react';
 import FloatingParticles from './components/FloatingParticles';
 import ClickSparkles from './components/ClickSparkles';
-import AudioControl from './components/AudioControl';
 import HeroSection from './components/HeroSection';
 import MessageSection from './components/MessageSection';
 import TributeSection from './components/TributeSection';
@@ -20,7 +19,6 @@ const App: React.FC = () => {
       {/* Global Effects */}
       <FloatingParticles />
       <ClickSparkles />
-      <AudioControl />
 
       {/* Sections */}
       <HeroSection onScrollDown={scrollToMessage} />
